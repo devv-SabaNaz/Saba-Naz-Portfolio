@@ -1085,3 +1085,39 @@ html[data-theme="dark"] .btn-primary {
     transition-duration: 0.01ms !important;
   }
 }
+/* footer mbl responsive */
+@media (max-width: 600px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px 20px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer p {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
+  .footer a {
+    white-space: normal;
+  }
+}
